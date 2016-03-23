@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Include the compiled Ratchet CSS -->
+
+    <link rel="stylesheet" type="text/css" href="css/docs.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ratchet.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.css"> -->
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+
+    <style type="text/css">
+    img{width:100%;}
+    /*.liliadd{margin-top: 100px;}*/
+    .slide-text{
+      position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0,0,0,.5);
+    }
+    </style>
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+      <!-- <a class="icon icon-left-nav pull-left" href="second.html"></a> -->
+      <h1 class="title">My Ratchet</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <p class="content-padded liliadd">This is a demo i did with ratchet</p>
+        <div class="segmented-control">
+          <a class="control-item active" href="#mySlider">
+            first day
+          </a>
+          <a class="control-item" href="#item1mobile">
+            second day
+          </a>
+          <a class="control-item" href="#item2mobile">
+            third day
+          </a>
+        </div>
+        <div class="card">
+          <div class="control-content slider" id="mySlider">
+            <div class="slide-group">
+              <div class="slide">
+                <img src="img/slide-1.jpg">
+                <span class="slide-text">
+                  <span class="icon icon-left-nav"></span>
+                  Slide me
+                </span>
+              </div>
+              <div class="slide">
+                <img src="img/2.jpg">
+              </div>
+              <div class="slide">
+                <img src="img/3.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="control-content" id="item1mobile">
+            <span >Do you think I am a good girl</span>
+            <button class="btn btn-block"><a href="second.html" data-transition="slide-out">
+                  If you think so,click</a></a>
+            </button>
+          </div>
+          <span  class="control-content" id="item2mobile" >miss you</span>
+          <!-- <span id="item3mobile" class="control-content">love you</span> -->
+        </div>
+    </div>
+
+  </body>
+</html>
